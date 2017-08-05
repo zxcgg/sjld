@@ -7,10 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="SSM" />
+        <module name="省市县三级联动" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="SSM" target="1.8" />
+      <module name="省市县三级联动" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

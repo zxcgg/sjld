@@ -8,11 +8,24 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class ll {
 
     @RequestMapping(value = "", method = RequestMethod.GET)
-    public String ll(){
+    public String ll() {
         return "index";
-    }  @RequestMapping(value = "fail", method = RequestMethod.GET)
-    public String f(){
+    }
+
+    @RequestMapping(value = "fail", method = RequestMethod.GET)
+    public String f() {
         return "fail";
     }
+
+    @RequestMapping(value = "upload", method = RequestMethod.GET)
+    public String upload() {
+        return "upload";
+    }
+
+    @RequestMapping(value = "download", method = RequestMethod.GET)
+    public String download() {
+        return "download";
+    }
+
 
 }

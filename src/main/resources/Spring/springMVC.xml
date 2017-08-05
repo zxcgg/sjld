@@ -25,13 +25,10 @@
     <!--<mvc:resources mapping="/img/**" location="/WEB-INF/img/"/>-->
     <!--<mvc:resources mapping="/fonts/**" location="/WEB-INF/fonts/"/>-->
 
-    <!--&lt;!&ndash; 定义文件上传解析器  上传文件或用到&ndash;&gt;-->
-    <!--<bean id="multipartResolver"-->
-    <!--class="org.springframework.web.multipart.commons.CommonsMultipartResolver">-->
-    <!--&lt;!&ndash; 设定默认编码 &ndash;&gt;-->
-    <!--<property name="defaultEncoding" value="UTF-8"></property>-->
-    <!--&lt;!&ndash; 设定文件上传的最大值5MB，5*1024*1024 &ndash;&gt;-->
-    <!--<property name="maxUploadSize" value="5242880"></property>-->
-    <!--</bean>-->
+    <!-- 定义文件上传解析器  上传文件或用到-->
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver"
+        p:defaultEncoding="UTF-8"
+        p:maxUploadSize="5400000"
+     />
 
 </beans>
