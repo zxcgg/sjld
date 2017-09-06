@@ -34,6 +34,14 @@
         <servlet-name>default</servlet-name>
         <url-pattern>*.jpg</url-pattern>
     </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>default</servlet-name>
+        <url-pattern>*.ttf</url-pattern>
+        <url-pattern>*.svg</url-pattern>
+        <url-pattern>*.eot</url-pattern>
+        <url-pattern>*.woff</url-pattern>
+        <url-pattern>*.woff2</url-pattern>
+    </servlet-mapping>
 
 
     <!--log4j配置-->

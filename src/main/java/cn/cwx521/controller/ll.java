@@ -12,6 +12,16 @@ public class ll {
         return "index";
     }
 
+    @RequestMapping(value = "edit", method = RequestMethod.GET)
+    public String edit() {
+        return "edit";
+    }
+
+    @RequestMapping(value = "table", method = RequestMethod.GET)
+    public String table() {
+        return "table";
+    }
+
     @RequestMapping(value = "fail", method = RequestMethod.GET)
     public String f() {
         return "fail";

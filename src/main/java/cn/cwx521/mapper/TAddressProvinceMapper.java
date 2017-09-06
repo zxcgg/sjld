@@ -2,7 +2,9 @@ package cn.cwx521.mapper;
 
 import cn.cwx521.pojo.TAddressProvince;
 import cn.cwx521.pojo.TAddressProvinceExample;
+
 import java.util.List;
+
 import org.apache.ibatis.annotations.Param;
 
 public interface TAddressProvinceMapper {
@@ -27,6 +29,7 @@ public interface TAddressProvinceMapper {
     int updateByPrimaryKeySelective(TAddressProvince record);
 
     int updateByPrimaryKey(TAddressProvince record);
+
     List<TAddressProvince> selectProvince();
 
 }
