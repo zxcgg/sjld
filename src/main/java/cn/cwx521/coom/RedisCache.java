@@ -37,13 +37,7 @@ public class RedisCache implements Cache {
         if (id == null) {
             throw new IllegalArgumentException("Cache instances require an ID");
         }
-        System.out.println("kaishi"+id);
-        System.out.println("kaishi"+id);
-        System.out.println("kaishi"+id);
-        logger.debug("MybatisRedisCache:id=" + id);
-        logger.debug("MybatisRedisCache:id=" + id);
-        logger.debug("MybatisRedisCache:id=" + id);
-        logger.debug("MybatisRedisCache:id=" + id);
+        System.out.println(id+"开始缓存");
         this.id = id;
     }
 
