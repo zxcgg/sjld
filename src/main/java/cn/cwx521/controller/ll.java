@@ -9,6 +9,9 @@ public class ll {
 
     @RequestMapping(value = "", method = RequestMethod.GET)
     public String ll() {
+
+
+
         return "index";
     }
 

@@ -21,6 +21,7 @@ public class table {
 
     @RequestMapping(value = "table", method = RequestMethod.GET)
     @ResponseBody
+
     public PageBean1 table(int page, int rows) {
         return tableService.selectData(page, rows);
     }

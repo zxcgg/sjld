@@ -49,6 +49,7 @@ public class upload {
 //        return "user/login";
     @RequestMapping(value = "/up", method = RequestMethod.POST)
     @ResponseBody
+
     public String upload(MultipartFile file, HttpServletRequest request, Upload upload) {
         String path = request.getSession().getServletContext().getRealPath("/") + "WEB-INf\\upload";//设置文件上传路径
         String filName = file.getOriginalFilename();//获取文件名字

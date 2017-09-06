@@ -15,7 +15,7 @@ public class Test1 {
     }
 
     @Test
-    public void testJedisPool() {
+    public void testJedisPool( ) {
         JedisPool pool = (JedisPool) applicationContext.getBean("jedisPool");
         Jedis jedis = pool.getResource();
         try  {

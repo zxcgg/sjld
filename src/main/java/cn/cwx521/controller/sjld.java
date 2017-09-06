@@ -45,7 +45,8 @@ public class sjld {
         response.getWriter().print(jsonArray.toString());
         response.getWriter().flush();
         response.getWriter().close();
-    } @RequestMapping(value = "town", method = RequestMethod.GET)
+    }
+    @RequestMapping(value = "town", method = RequestMethod.GET)
     @ResponseBody
     public void three(HttpServletResponse response, String cityCode) throws IOException {
         List<TAddressTown> list = sjldService.selectTown(cityCode);
